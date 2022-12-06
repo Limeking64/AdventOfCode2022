@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DayOne\Example.txt" />
+    <None Remove="DayOne\Input.txt" />
+    <None Remove="DayTwo\Example.txt" />
+    <None Remove="DayTwo\Input.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DayOne\Example.txt" />
+    <EmbeddedResource Include="DayOne\Input.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayTwo\Example.txt" />
+    <EmbeddedResource Include="DayTwo\Input.txt" />
+    <None Remove="DayThree\Example.txt" />
+    <EmbeddedResource Include="DayThree\Example.txt" />
+    <None Remove="DayThree\Input.txt" />
+    <EmbeddedResource Include="DayThree\Input.txt" />
+    <None Remove="DayFour\Input.txt" />
+    <EmbeddedResource Include="DayFour\Input.txt" />
+    <None Remove="DayFour\Example.txt" />
+    <EmbeddedResource Include="DayFour\Example.txt" />
+    <None Remove="DayFive\Input.txt" />
+    <EmbeddedResource Include="DayFive\Input.txt" />
+    <None Remove="DayFive\Example.txt" />
+    <EmbeddedResource Include="DayFive\Example.txt" />
+    <None Remove="DaySix\Input.txt" />
+    <EmbeddedResource Include="DaySix\Input.txt" />
+    <None Remove="DaySix\Example.txt" />
+    <EmbeddedResource Include="DaySix\Example.txt" />
+  </ItemGroup>
+
+</Project>
